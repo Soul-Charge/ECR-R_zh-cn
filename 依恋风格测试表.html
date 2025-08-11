@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亲密关系量表（已修正）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .table-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            overflow: hidden;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem 1rem;
+            text-align: left;
+            vertical-align: middle;
+        }
+        thead th {
+            background-color: #f8fafc;
+            font-weight: 500;
+            color: #475569;
+        }
+        .header-main {
+            text-align: center;
+            font-size: 1.125rem; /* 18px */
+        }
+        .header-sub {
+            text-align: center;
+            width: 10%;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .checkbox-cell {
+            text-align: center;
+            /* Ensure empty cells have a consistent height */
+            height: 50px;
+        }
+        .question-cell {
+             color: #1e293b;
+        }
+        /* Custom checkbox style */
+        .styled-checkbox {
+            transform: scale(1.5);
+            accent-color: #3b82f6;
+        }
+    </style>
+</head>
+<body>
+     <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">依恋风格测试表</h2>
+    <p class=" text-gray-600 mb-8">请在下列的陈述中，选择符合你情况的语句，并在表格内的小方框里打钩。
+    </br>
+    （如果你认为该句不符合你的情况，不必做任何标记。）</p>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" class="question-cell font-semibold">请勾选所有符合你真实情况的描述：</th>
+                    <th colspan="3" class="header-main">所属分类</th>
+                </tr>
+                <tr>
+                    <th class="header-sub">A</th>
+                    <th class="header-sub">B</th>
+                    <th class="header-sub">C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="question-cell">我常常担心另一半不爱我了。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我感觉与另一半很容易陷入热恋。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我很担心另一半了解真实的我以后，就不再喜欢我了。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我感觉自己在分手以后很快就能自愈。我都很惊讶，自己怎么能那么快就忘记一个人。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我在单身状态时会心情焦虑，感觉生活若有所失。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我在另一半情绪失落的时候，很难给予对方情感支持。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">每当另一半不在身边，我都很害怕对方被别的人吸引。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我非常享受依靠另一半的感觉。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">对于我来说，独立性比亲密关系更重要。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我不想将内心最深处的感觉分享给另一半。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">每当我与另一半分享感受时，都害怕对方难以感同身受。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我对自己的亲密关系大体满意</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我不觉得在亲密关系中付出过多。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我常常思考自己的恋爱关系。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我觉得很难去依靠另一半。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我会很快对另一半产生依恋。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我能很轻易地将自己的需求传达给对方。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我有时会莫名其妙地对另一半发火。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我对另一半的情绪十分敏感。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我相信大多数人都是诚实可靠的。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">比起固定的性伴侣来，我更偏爱与不同人之间的露水情缘。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我很乐意跟另一半分享自己的想法和感受。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我常常担心另一半离我而去以后，我就再也找不到其他人了。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">另一半离我太近时，我会感觉到焦虑。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我在与对方争执时，总会冲动之下说出令我后悔的话，而不擅长就事论事</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">与另一半的不愉快，不会令我对我们的关系产生怀疑。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我的另一半总会提出一些让我觉得过分亲密的请求。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我常担心自己不够有魅力。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我不善于在恋爱中制造浪漫。有时别人会觉得我很乏味。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">不在一起时，我会很想念另一半，然而在一起了又会想逃离。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">当我与别人意见不一时，能够很从容地表达自己的意见。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我不喜欢别人依赖我的感觉。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">如果我发现自己喜欢的人却喜欢别人，我并不会感到很痛苦。会稍微有些嫉妒，不过这种感觉转瞬即逝。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">如果我发现自己喜欢的人却喜欢别人，我会感觉到解脱，如此一来对方就不会对我产生占有欲。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">如果我发现自己喜欢的人却喜欢别人，我会痛苦万分。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">如果我的约会对象开始渐渐疏远我，我会好奇发生了什么，但不会归咎于我自己。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">如果我的约会对象开始渐渐疏远我，我会感觉解脱了。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">如果我的约会对象开始疏远我，我会觉得自己是不是做错了什么。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">如果另一半想跟我分手，我会竭尽全力告诉对方，放弃我是个大损失，试试让他/她嫉妒也无妨。</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-a"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">如果我交往了几个月的对象不想再跟我联系了，我会有点受挫，但是很快就好了。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">有时候在恋爱关系中，我的需要被满足后，我就开始手足无措了。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-c"></td>
+                </tr>
+                <tr>
+                    <td class="question-cell">我并不觉得跟前任保持联系有什么问题（仅仅是朋友），毕竟我们有很多相似之处。</td>
+                    <td class="checkbox-cell"></td>
+                    <td class="checkbox-cell"><input type="checkbox" class="styled-checkbox checkbox-b"></td>
+                    <td class="checkbox-cell"></td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+
+    <div class="max-w-900px mx-auto my-6 flex justify-center">
+        <button id="submit-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+            提交并查看结果
+        </button>
+    </div>
+
+    <div id="results-container" class="max-w-900px mx-auto my-8 px-4 sm:px-0">
+        </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            // Calculate scores
+            const countA = document.querySelectorAll('input.checkbox-a:checked').length;
+            const countB = document.querySelectorAll('input.checkbox-b:checked').length;
+            const countC = document.querySelectorAll('input.checkbox-c:checked').length;
+
+            const resultsDiv = document.getElementById('results-container');
+            
+            // Generate and inject the results HTML
+            resultsDiv.innerHTML = `
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md transition-opacity duration-500 ease-in opacity-100">
+                    <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">测试结果</h2>
+                    <p class="text-center text-gray-600 mb-8">你在一个类型下打钩越多，就意味着你更倾向于对应的依恋风格。A类代表焦虑型依恋风格，而B类和C类分别代表安全型和回避型。</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-10">
+                        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+                            <p class="text-lg font-semibold text-red-800">A类 (焦虑型)</p>
+                            <p class="text-4xl font-bold text-red-600 mt-2">${countA}</p>
+                        </div>
+                        <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                            <p class="text-lg font-semibold text-green-800">B类 (安全型)</p>
+                            <p class="text-4xl font-bold text-green-600 mt-2">${countB}</p>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg">
+                            <p class="text-lg font-semibold text-blue-800">C类 (回避型)</p>
+                            <p class="text-4xl font-bold text-blue-600 mt-2">${countC}</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-700 mb-3 border-l-4 border-red-500 pl-4">焦虑型</h3>
+                            <p class="text-gray-600 leading-relaxed">你非常愿意与恋人粘在一起，也非常善于亲昵的行为。但是你常常感到害怕，你害怕恋人并不像你想象的那样，乐意与你靠近。你会将很多情感精力投入到亲密关系中。伴侣的行为和感受哪怕有一丝小小的波动，你都会非常敏感，你将伴侣的行为过于强加给自己，这就会导致在亲密关系中，你将产生很多消极体验，也会很容易情绪低沉。如此一来，你很可能一时冲动，产生一些事后会后悔的语言和行为。不过，如果对方给予你足够的安全感和抚慰，你就能消除很大一部分的忧心，也会获得更大的满足感。</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-700 mb-3 border-l-4 border-green-500 pl-4">安全型</h3>
+                            <p class="text-gray-600 leading-relaxed">在恋爱中表现得温暖又体贴，这是你的天性使然。你享受恋爱中的亲密举动，也并不会对此过于担忧。你可以镇定自若地处理恋爱中的突发事件，也并不会轻易感到沮D。你会将自己的需求和感受，有效地传达给伴侣，同时也对伴侣的情绪暗示有着很强的解读与反馈能力。你会与伴侣分享成功的喜悦和失败的反思，同时也会在对方需要你的时候给予支撑。</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-700 mb-3 border-l-4 border-blue-500 pl-4">回避型</h3>
+                            <p class="text-gray-600 leading-relaxed">对于你来说，保持独立性与自我价值感是最为重要的，因此你非常看重恋爱关系中的自主权。即使你是愿意与对方接近的，但是伴侣近在咫尺的感觉还是令你很不舒服。你绝不会在亲密关系或者遭到拒绝这类事情上，花太多时间和精力。你并不愿意对伴侣完全敞开心扉，因此对方会抱怨你太过疏离。在亲密关系中，你对于伴侣表现出的任何关于控制和约束的信号，都保持着高度的警惕。</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Scroll to the results
+            resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    </script>
+</body>
+</html>
